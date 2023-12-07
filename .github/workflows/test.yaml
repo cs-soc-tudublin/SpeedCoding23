@@ -1,5 +1,5 @@
 name: Test
-run-name: ${{ github.actor }} PR being linted for code cleanliness
+run-name: ${{ github.actor }} TESTING FOR WINTER GAMES
 on: [pull_request]
 jobs:
   lint:
@@ -8,4 +8,4 @@ jobs:
       - run: echo "Job triggered by ${{ github.event_name }} event."
       - uses: actions/checkout@v3
       - run: echo "Checked out into ${{ github.repository }} on branch ${{ github.ref }}"
-      - run: python .
+      - run: time python .
