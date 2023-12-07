@@ -1,0 +1,11 @@
+name: Test
+run-name: ${{ github.actor }} TESTING FOR WINTER GAMES
+on: [pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Job triggered by ${{ github.event_name }} event."
+      - uses: actions/checkout@v3
+      - run: echo "Checked out into ${{ github.repository }} on branch ${{ github.ref }}"
+      - run: time python .
