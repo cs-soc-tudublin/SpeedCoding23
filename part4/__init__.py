@@ -1,5 +1,7 @@
 """
 Merge two sorted arrays of integers together.
+Return an array which is sorted
+No .sort methods, write your own algorithm
 """
 
 
